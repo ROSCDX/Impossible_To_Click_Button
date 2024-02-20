@@ -3,10 +3,28 @@ body{
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    background: linear-gradient(90deg, rgba(204, 59, 237, 1) 0%, rgba(217, 59, 14, 1) 50%, rgba(238, 130, 238, 1) 100%);
+    
 }
 
 #cant-touch-me{
+    transition: 20ms ease-in;
     position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
     white-space: nowrap;
     font-size: 2rem;
+    border: none;
+    outline: none;
+    border-radius: .75rem;
+    background: transparent 0.7;
+    padding: 4rem;
+}
+.glass{
+    background: linear-gradient(135deg, rgba(225,225,225,0.1),  rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
